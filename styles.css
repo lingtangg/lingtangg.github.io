@@ -152,7 +152,7 @@ svg {
 /* Contact me page  */
 
 form {
-    width: 40%;
+    width: 45%;
     height: auto;
 }
 
@@ -164,27 +164,86 @@ form {
 
 .form-row {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    gap: 5%;
 }
 
 .form-row input,
 .form-row textarea {
-    flex: 1;
+    width: 100%;
+    height: auto;
 }
 
 .message-form li {
     list-style-type: none;
     padding: 0.25em;
+    font-weight: 600;
 }
 
 #message {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding-bottom: 0.25em;
 }
 
 #message-box {
     width: 100%;
 }
 
+#submit-button {
+    margin: 0 auto;
+    display: block;
+}
+
 /* Media queries */
+/* to do: media queries, screenshots, deploy on github pages */
+
+@media (max-width: 576px) {
+    .header,
+    .about-me,
+    .projects, 
+    .contact-form,
+    .footer {
+        padding: 3% 10% 0 10%;
+    }
+
+    .footer {
+        padding-bottom: 3%;
+    }
+
+    /* Home page */
+
+    .intro,
+    .previous-experience,
+    .non-work {
+        display: block;
+    }
+
+    .picture {
+        width: 70%;
+        margin-left: auto;
+    }
+
+    .biography-1 {
+        padding: 0 0 10% 0;
+    }
+
+    .previous-experience {
+        padding-bottom: 3%;
+    }
+
+    /* Projects page */
+
+    .projects {
+        padding-top: 0;
+        padding-bottom: 8%;
+    }
+
+    .project-cards {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
