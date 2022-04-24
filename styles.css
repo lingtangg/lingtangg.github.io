@@ -196,8 +196,9 @@ form {
 }
 
 /* Media queries */
-/* to do: media queries, screenshots, deploy on github pages */
+/* to do: screenshots, deploy on github pages */
 
+/* For phones */
 @media (max-width: 576px) {
     .header,
     .about-me,
@@ -237,6 +238,7 @@ form {
     .projects {
         padding-top: 0;
         padding-bottom: 8%;
+        justify-content: center;
     }
 
     .project-cards {
@@ -245,5 +247,73 @@ form {
 
     .project-card {
         width: 100%;
+    }
+
+    /* Contact me page */
+
+    form {
+        width: 80%;
+    }
+}
+
+/* For tablets */
+@media (max-width: 768px) and (min-width: 577px) {
+    .header,
+    .about-me,
+    .projects, 
+    .contact-form,
+    .footer {
+        padding: 3% 10% 0 10%;
+    }
+
+    .header {
+        padding-top: 0%;
+    }
+
+    .footer {
+        padding-bottom: 3%;
+    }
+
+    /* Home page */
+
+    .intro,
+    .previous-experience,
+    .non-work {
+        display: block;
+    }
+
+    .picture {
+        width: 50%;
+        margin-left: auto;
+    }
+
+    .biography-1 {
+        padding: 0 0 10% 0;
+    }
+
+    .previous-experience {
+        padding-bottom: 3%;
+    }
+
+    /* Projects page */
+
+    .projects {
+        padding-top: 0;
+        padding-bottom: 5%;
+    }
+    
+    .project-cards {
+        flex-wrap: wrap;
+    }
+
+    .project-card {
+        width: calc((100% - 8%) / 2);
+        height: auto;
+    }
+
+    /* Contact me page */
+
+    form {
+        width: 60%;
     }
 }
